@@ -1,0 +1,650 @@
+[15.May.2015 22:05:20]	[debug]	I am Here
+[15.May.2015 22:05:20]	[debug]	I am Here
+[18.May.2015 18:05:17]	[debug]	165
+[18.May.2015 18:05:23]	[debug]	165
+[21.May.2015 23:05:34]	[debug]	select * from wp_lms_user_courses_sets where course_id='30' and user_id='303' and paid_amount !='0'
+[24.May.2015 16:05:27]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=152
+[24.May.2015 16:05:58]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=152
+[24.May.2015 16:05:58]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=153
+[24.May.2015 16:05:58]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=154
+[24.May.2015 16:05:58]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=155
+[24.May.2015 16:05:58]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=156
+[24.May.2015 16:05:58]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=157
+[24.May.2015 16:05:58]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=158
+[24.May.2015 16:05:58]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=159
+[24.May.2015 16:05:58]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=160
+[24.May.2015 16:05:58]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=161
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=152
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=153
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=154
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=155
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=156
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=157
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=158
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=159
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=160
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=161
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=164
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=162
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=163
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=79
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=80
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=81
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=82
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=83
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=84
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=85
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=86
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=87
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=104
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=105
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=106
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=107
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=108
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=109
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=110
+[24.May.2015 16:05:28]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=111
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=152
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=153
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=154
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=155
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=156
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=157
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=158
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=159
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=160
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=161
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=164
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=162
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=6 WHERE module_id=163
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=79
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=80
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=81
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=82
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=83
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=84
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=85
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=86
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=87
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=104
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=105
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=106
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=107
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=108
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=109
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=110
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=111
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=112
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=113
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=114
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=115
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=116
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=117
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=23 WHERE module_id=118
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=24 WHERE module_id=119
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=24 WHERE module_id=120
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=24 WHERE module_id=121
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=24 WHERE module_id=122
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=24 WHERE module_id=124
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=24 WHERE module_id=123
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=24 WHERE module_id=125
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=27 WHERE module_id=71
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=27 WHERE module_id=56
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=27 WHERE module_id=57
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=27 WHERE module_id=72
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=27 WHERE module_id=73
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=27 WHERE module_id=74
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=27 WHERE module_id=75
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=27 WHERE module_id=76
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=27 WHERE module_id=77
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=27 WHERE module_id=78
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=30 WHERE module_id=147
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=30 WHERE module_id=148
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=30 WHERE module_id=149
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=30 WHERE module_id=150
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=30 WHERE module_id=151
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=12 WHERE module_id=59
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=12 WHERE module_id=60
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=12 WHERE module_id=61
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=12 WHERE module_id=62
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=12 WHERE module_id=63
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=22 WHERE module_id=42
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=22 WHERE module_id=58
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=19 WHERE module_id=43
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=19 WHERE module_id=44
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=19 WHERE module_id=45
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=19 WHERE module_id=46
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=19 WHERE module_id=47
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=19 WHERE module_id=48
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=19 WHERE module_id=49
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=19 WHERE module_id=51
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=19 WHERE module_id=52
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=22 WHERE module_id=98
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=22 WHERE module_id=97
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=22 WHERE module_id=99
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=22 WHERE module_id=101
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=22 WHERE module_id=102
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=22 WHERE module_id=103
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=22 WHERE module_id=100
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=26 WHERE module_id=64
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=26 WHERE module_id=65
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=26 WHERE module_id=66
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=26 WHERE module_id=67
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=19 WHERE module_id=50
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=10 WHERE module_id=35
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=10 WHERE module_id=36
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=10 WHERE module_id=38
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=10 WHERE module_id=40
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=10 WHERE module_id=41
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=10 WHERE module_id=37
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=7 WHERE module_id=95
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=7 WHERE module_id=96
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=7 WHERE module_id=126
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=7 WHERE module_id=127
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=7 WHERE module_id=128
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=7 WHERE module_id=129
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=7 WHERE module_id=130
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=7 WHERE module_id=131
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=7 WHERE module_id=132
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=7 WHERE module_id=133
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=7 WHERE module_id=134
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=7 WHERE module_id=135
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=29 WHERE module_id=89
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=29 WHERE module_id=90
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=29 WHERE module_id=91
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=29 WHERE module_id=92
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=29 WHERE module_id=143
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=29 WHERE module_id=144
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=29 WHERE module_id=145
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=29 WHERE module_id=146
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=32 WHERE module_id=31
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=32 WHERE module_id=24
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=32 WHERE module_id=25
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=32 WHERE module_id=23
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=32 WHERE module_id=26
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=32 WHERE module_id=28
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=32 WHERE module_id=27
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=32 WHERE module_id=29
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=32 WHERE module_id=30
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=165
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=166
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=169
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=168
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=167
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=170
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=171
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=172
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=173
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=174
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=175
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=176
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=177
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=178
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=179
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=4 WHERE module_id=180
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=5 WHERE module_id=88
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=20 WHERE module_id=192
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=20 WHERE module_id=193
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=20 WHERE module_id=194
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=20 WHERE module_id=195
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=20 WHERE module_id=196
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=20 WHERE module_id=197
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=20 WHERE module_id=198
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=25 WHERE module_id=202
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=25 WHERE module_id=203
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=25 WHERE module_id=204
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=25 WHERE module_id=205
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=25 WHERE module_id=206
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=25 WHERE module_id=207
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=25 WHERE module_id=208
+[24.May.2015 17:05:13]	[debug]	UPDATE wp_lms_module SET `course_id`=10 WHERE module_id=191
+[28.May.2015 18:05:06]	[debug]	select * from wp_lms_user_courses_sets where course_id='30' and user_id='303' and paid_amount !='0'
+[01.Jun.2015 20:06:06]	[debug]	select * from wp_lms_user_courses_sets where course_id='30' and user_id='303' and paid_amount !='0'
+[01.Jun.2015 21:06:33]	[debug]	select * from wp_lms_user_courses_sets where course_id='30' and user_id='303' and paid_amount !='0'
+[01.Jun.2015 21:06:53]	[debug]	select * from wp_lms_user_courses_sets where course_id='30' and user_id='303' and paid_amount !='0'
+[01.Jun.2015 22:06:30]	[debug]	select * from wp_lms_user_courses_sets where course_id='30' and user_id='303' and paid_amount !='0'
+[01.Jun.2015 22:06:30]	[debug]	AllStudentCourses Object
+(
+    [studentcourses] => Array
+        (
+            [0] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 7
+                            [course_name] => How to Become a Celebrity Baby Nurse
+                            [course_code] => CRS-BN04
+                            [course_price] => 3500.00
+                            [course_time_type] => Days
+                            [course_time] => 240
+                            [id] => 144
+                            [start_date] => 2015-05-11 13:35:01
+                            [end_date] => 2016-01-06 20:35:01
+                            [signup_type] => 1
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                        )
+
+                )
+
+            [1] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 4
+                            [course_name] => How to Pass a Job Interview and Land a Job with a Celebrity in a Fortune 500 Company
+                            [course_code] => CRS-CT101
+                            [course_price] => 2500.00
+                            [course_time_type] => Days
+                            [course_time] => 240
+                            [id] => 145
+                            [start_date] => 2015-05-11 13:39:18
+                            [end_date] => 2016-01-06 20:39:18
+                            [signup_type] => 1
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                        )
+
+                )
+
+            [2] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 19
+                            [course_name] => How to Become a Celebrity Estate Manager
+                            [course_code] => CRS-EM060
+                            [course_price] => 4000.00
+                            [course_time_type] => Days
+                            [course_time] => 240
+                            [id] => 146
+                            [start_date] => 2015-05-11 13:43:48
+                            [end_date] => 2016-01-06 20:43:48
+                            [signup_type] => 1
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                        )
+
+                )
+
+            [3] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 30
+                            [course_name] => Healthy Cooking Made Easy
+                            [course_code] => CRS-HLTHCK
+                            [course_price] => 1000.00
+                            [course_time_type] => Days
+                            [course_time] => 180
+                            [id] => 149
+                            [start_date] => 2015-05-11 16:03:09
+                            [end_date] => 2015-11-07 23:03:09
+                            [signup_type] => 0
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [paid_amount] => 200.00
+                                    [set_id] => 107
+                                    [set_name] => Set A
+                                    [module_id] => 147
+                                    [module_name] => Module 1 - Healthy Cooking
+                                    [pageid] => 1029
+                                    [tbl_order] => 
+                                    [status] => 
+                                    [start_date] => 2015-05-11
+                                    [end_date] => 2015-11-07
+                                )
+
+                        )
+
+                )
+
+            [4] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 6
+                            [course_name] => Advanced Baking and Pastry Making 
+                            [course_code] => CRS-BKNG
+                            [course_price] => 1000.00
+                            [course_time_type] => Days
+                            [course_time] => 180
+                            [id] => 159
+                            [start_date] => 2015-05-13 17:24:19
+                            [end_date] => 2015-11-10 00:24:19
+                            [signup_type] => 1
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+)
+
+[01.Jun.2015 22:06:18]	[debug]	select * from wp_lms_user_courses_sets where course_id='30' and user_id='303' and paid_amount !='0'
+[01.Jun.2015 22:06:18]	[debug]	stdClass Object
+(
+    [id] => 246
+    [user_id] => 303
+    [course_id] => 30
+    [set_id] => 107
+    [start_date] => 2015-05-11
+    [end_date] => 2015-11-07
+    [paid_amount] => 200.00
+    [amount] => 200.00
+    [payment_method] => By Admin
+    [status] => 
+)
+
+[01.Jun.2015 22:06:19]	[debug]	AllStudentCourses Object
+(
+    [studentcourses] => Array
+        (
+            [0] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 7
+                            [course_name] => How to Become a Celebrity Baby Nurse
+                            [course_code] => CRS-BN04
+                            [course_price] => 3500.00
+                            [course_time_type] => Days
+                            [course_time] => 240
+                            [id] => 144
+                            [start_date] => 2015-05-11 13:35:01
+                            [end_date] => 2016-01-06 20:35:01
+                            [signup_type] => 1
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                        )
+
+                )
+
+            [1] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 4
+                            [course_name] => How to Pass a Job Interview and Land a Job with a Celebrity in a Fortune 500 Company
+                            [course_code] => CRS-CT101
+                            [course_price] => 2500.00
+                            [course_time_type] => Days
+                            [course_time] => 240
+                            [id] => 145
+                            [start_date] => 2015-05-11 13:39:18
+                            [end_date] => 2016-01-06 20:39:18
+                            [signup_type] => 1
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                        )
+
+                )
+
+            [2] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 19
+                            [course_name] => How to Become a Celebrity Estate Manager
+                            [course_code] => CRS-EM060
+                            [course_price] => 4000.00
+                            [course_time_type] => Days
+                            [course_time] => 240
+                            [id] => 146
+                            [start_date] => 2015-05-11 13:43:48
+                            [end_date] => 2016-01-06 20:43:48
+                            [signup_type] => 1
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                        )
+
+                )
+
+            [3] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 30
+                            [course_name] => Healthy Cooking Made Easy
+                            [course_code] => CRS-HLTHCK
+                            [course_price] => 1000.00
+                            [course_time_type] => Days
+                            [course_time] => 180
+                            [id] => 149
+                            [start_date] => 2015-05-11 16:03:09
+                            [end_date] => 2015-11-07 23:03:09
+                            [signup_type] => 0
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [paid_amount] => 200.00
+                                    [set_id] => 107
+                                    [set_name] => Set A
+                                    [module_id] => 147
+                                    [module_name] => Module 1 - Healthy Cooking
+                                    [pageid] => 1029
+                                    [tbl_order] => 
+                                    [status] => 
+                                    [start_date] => 2015-05-11
+                                    [end_date] => 2015-11-07
+                                )
+
+                        )
+
+                )
+
+            [4] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 6
+                            [course_name] => Advanced Baking and Pastry Making 
+                            [course_code] => CRS-BKNG
+                            [course_price] => 1000.00
+                            [course_time_type] => Days
+                            [course_time] => 180
+                            [id] => 159
+                            [start_date] => 2015-05-13 17:24:19
+                            [end_date] => 2015-11-10 00:24:19
+                            [signup_type] => 1
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+)
+
+[01.Jun.2015 22:06:36]	[debug]	select * from wp_lms_user_courses_sets where course_id='30' and user_id='303' and paid_amount !='0'
+[01.Jun.2015 22:06:36]	[debug]	Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 246
+            [user_id] => 303
+            [course_id] => 30
+            [set_id] => 107
+            [start_date] => 2015-05-11
+            [end_date] => 2015-11-07
+            [paid_amount] => 200.00
+            [amount] => 200.00
+            [payment_method] => By Admin
+            [status] => 
+        )
+
+)
+
+[01.Jun.2015 22:06:37]	[debug]	AllStudentCourses Object
+(
+    [studentcourses] => Array
+        (
+            [0] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 7
+                            [course_name] => How to Become a Celebrity Baby Nurse
+                            [course_code] => CRS-BN04
+                            [course_price] => 3500.00
+                            [course_time_type] => Days
+                            [course_time] => 240
+                            [id] => 144
+                            [start_date] => 2015-05-11 13:35:01
+                            [end_date] => 2016-01-06 20:35:01
+                            [signup_type] => 1
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                        )
+
+                )
+
+            [1] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 4
+                            [course_name] => How to Pass a Job Interview and Land a Job with a Celebrity in a Fortune 500 Company
+                            [course_code] => CRS-CT101
+                            [course_price] => 2500.00
+                            [course_time_type] => Days
+                            [course_time] => 240
+                            [id] => 145
+                            [start_date] => 2015-05-11 13:39:18
+                            [end_date] => 2016-01-06 20:39:18
+                            [signup_type] => 1
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                        )
+
+                )
+
+            [2] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 19
+                            [course_name] => How to Become a Celebrity Estate Manager
+                            [course_code] => CRS-EM060
+                            [course_price] => 4000.00
+                            [course_time_type] => Days
+                            [course_time] => 240
+                            [id] => 146
+                            [start_date] => 2015-05-11 13:43:48
+                            [end_date] => 2016-01-06 20:43:48
+                            [signup_type] => 1
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                        )
+
+                )
+
+            [3] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 30
+                            [course_name] => Healthy Cooking Made Easy
+                            [course_code] => CRS-HLTHCK
+                            [course_price] => 1000.00
+                            [course_time_type] => Days
+                            [course_time] => 180
+                            [id] => 149
+                            [start_date] => 2015-05-11 16:03:09
+                            [end_date] => 2015-11-07 23:03:09
+                            [signup_type] => 0
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [paid_amount] => 200.00
+                                    [set_id] => 107
+                                    [set_name] => Set A
+                                    [module_id] => 147
+                                    [module_name] => Module 1 - Healthy Cooking
+                                    [pageid] => 1029
+                                    [tbl_order] => 
+                                    [status] => 
+                                    [start_date] => 2015-05-11
+                                    [end_date] => 2015-11-07
+                                )
+
+                        )
+
+                )
+
+            [4] => StudentCourse Object
+                (
+                    [course:protected] => Array
+                        (
+                            [course_id] => 6
+                            [course_name] => Advanced Baking and Pastry Making 
+                            [course_code] => CRS-BKNG
+                            [course_price] => 1000.00
+                            [course_time_type] => Days
+                            [course_time] => 180
+                            [id] => 159
+                            [start_date] => 2015-05-13 17:24:19
+                            [end_date] => 2015-11-10 00:24:19
+                            [signup_type] => 1
+                            [status] => Active
+                        )
+
+                    [moduleArr:protected] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+)
+

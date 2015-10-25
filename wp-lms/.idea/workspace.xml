@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b76e6193-6a50-4921-9a46-a0c2cd519437" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class/LMS_EnrolledCourses.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class/LMS_Student.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/LMS_OnlineSchoolLibrary.class.php" afterPath="$PROJECT_DIR$/class/LMS_OnlineSchoolLibrary.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-lms.php" afterPath="$PROJECT_DIR$/wp-lms.php" />
+    </list>
+    <ignored path="online-school.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="online-school" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="devel_area_page.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/admin/devel_area_page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.647059" vertical-offset="117" max-vertical-offset="3615">
+              <caret line="27" column="81" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#!!top" expanded="true" />
+                <marker date="1445633013000" expanded="true" signature="1419:1518" placeholder="..." />
+                <marker date="1445633013000" expanded="true" signature="1535:1683" placeholder="..." />
+                <marker date="1445633013000" expanded="true" signature="2006:2105" placeholder="..." />
+                <marker date="1445633013000" expanded="true" signature="2122:2258" placeholder="..." />
+                <marker date="1445633013000" expanded="false" signature="2211:2225" placeholder="..." />
+                <marker date="1445633013000" expanded="true" signature="2275:2374" placeholder="..." />
+                <marker date="1445633013000" expanded="true" signature="2469:2723" placeholder="..." />
+                <marker date="1445633013000" expanded="true" signature="2538:2683" placeholder="..." />
+                <marker date="1445633013000" expanded="true" signature="2538:2723" placeholder="..." />
+                <marker date="1445633013000" expanded="true" signature="3229:3362" placeholder="..." />
+                <marker date="1445633013000" expanded="true" signature="3277:3362" placeholder="..." />
+                <marker date="1445633013000" expanded="true" signature="3749:3805" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wp-lms.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-lms.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.2941175" vertical-offset="4590" max-vertical-offset="6105">
+              <caret line="324" column="71" selection-start-line="324" selection-start-column="71" selection-end-line="324" selection-end-column="71" />
+              <folding>
+                <element signature="e#6#273#0#PHP" expanded="true" />
+                <marker date="1445020075000" expanded="true" signature="8126:8226" placeholder="..." />
+                <marker date="1445020075000" expanded="true" signature="8687:8787" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LMS_DBFunctions.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/LMS_DBFunctions.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.392157" vertical-offset="8320" max-vertical-offset="12990">
+              <caret line="578" column="0" selection-start-line="578" selection-start-column="0" selection-end-line="578" selection-end-column="0" />
+              <folding>
+                <marker date="1445630800000" expanded="true" signature="1087:1116" placeholder="SELECT * FRO..table..." />
+                <marker date="1445630800000" expanded="true" signature="1506:1542" placeholder="SELECT count..table..." />
+                <marker date="1445630800000" expanded="true" signature="3527:3608" placeholder="SELECT * fro..QUIZ_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="5042:5148" placeholder="SELECT quiz...wp_lms_quizzes..." />
+                <marker date="1445630800000" expanded="true" signature="8515:8573" placeholder="SELECT * FRO..LESSONS_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="8897:9003" placeholder="SELECT * FRO..LESSONS_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="9242:9315" placeholder="SELECT * FRO..LESSONS_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="9621:9635" placeholder="SELECT * FRO..COURSES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="9934:10006" placeholder="SELECT * FRO..COURSES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="10288:10360" placeholder="SELECT * FRO..COURSES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="11941:12032" placeholder="SELECT * FRO..MODULE_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="15050:15064" placeholder="SELECT * FRO..PRODUCTS_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="15945:16118" placeholder="select produ..PRODUCTS_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="16365:16427" placeholder="SELECT * FRO..PRODUCTS_COURSES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="16481:16495" placeholder="SELECT * FRO..PRODUCTS_COURSES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="16833:16999" placeholder="SELECT m.* F..MODULE_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="17039:17128" placeholder="SELECT * FRO..MODULE_COURSE_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="17407:17480" placeholder="SELECT * FRO..MODULE_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="17782:17860" placeholder="SELECT * FRO..MODULE_COURSE_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="18243:18400" placeholder="select cours..COURSES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="18813:18827" placeholder="SELECT * FRO..PRODUCTS_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="23140:23276" placeholder="SELECT * FRO..USER_COURSES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="23541:23667" placeholder="SELECT * FRO..USER_COURSES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="23907:23987" placeholder="SELECT * FRO..USER_COURSES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="24322:24402" placeholder="DELETE FROM ..." />
+                <marker date="1445630800000" expanded="true" signature="24662:24742" placeholder="DELETE FROM ..." />
+                <marker date="1445630800000" expanded="true" signature="24950:25134" placeholder="SELECT userm..USER_COURSES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="25180:25261" placeholder="SELECT * FRO..USER_MODULES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="25768:25994" placeholder="SELECT userm..USER_COURSES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="26046:26230" placeholder="SELECT userm..USER_COURSES_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="26477:26570" placeholder="SELECT * fro..QUIZ_QUEST_TABLE..." />
+                <marker date="1445630800000" expanded="true" signature="27100:27283" placeholder="SELECT * FRO..wp_lms_lessons..." />
+                <marker date="1445630800000" expanded="true" signature="27382:27575" placeholder="SELECT * FRO..wp_lms_lessons..." />
+                <marker date="1445630800000" expanded="true" signature="27999:28150" placeholder="SELECT * FRO..wp_lms_user_progress..." />
+                <marker date="1445630800000" expanded="true" signature="29032:29097" placeholder="SELECT * FRO..wp_lms_product_course_access..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LMS_StudentCourses.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/LMS_StudentCourses.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="705">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LMS_Student.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/LMS_Student.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="660">
+              <caret line="32" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LMS_EnrolledCourses.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/class/LMS_EnrolledCourses.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.83949417" vertical-offset="787" max-vertical-offset="2085">
+              <caret line="110" column="52" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="52" />
+              <folding>
+                <element signature="e#6#87#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LMS_StudentCourseList.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/LMS_StudentCourseList.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-40.958332" vertical-offset="802" max-vertical-offset="1890">
+              <caret line="119" column="1" selection-start-line="25" selection-start-column="4" selection-end-line="119" selection-end-column="1" />
+              <folding>
+                <element signature="e#6#85#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LMS_OnlineSchoolLibrary.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/LMS_OnlineSchoolLibrary.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-28.82353" vertical-offset="0" max-vertical-offset="2160">
+              <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LMS_PageFunctions.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/LMS_PageFunctions.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="1470">
+              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="choose_product.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shortcodes/choose_product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.098039" vertical-offset="304" max-vertical-offset="1170">
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pages/studentCourses-delete.php" />
+        <option value="$PROJECT_DIR$/pages/studentCourses.php" />
+        <option value="$PROJECT_DIR$/inc/LMS_SchoolDB.php" />
+        <option value="$PROJECT_DIR$/inc/StudentAccount.php" />
+        <option value="$PROJECT_DIR$/inc/StudentCourse.php" />
+        <option value="$PROJECT_DIR$/shortcodes/lessons_page_shortcode.php" />
+        <option value="$PROJECT_DIR$/CoursePackagesDB.php" />
+        <option value="$PROJECT_DIR$/shortcodes/tabprofile.php" />
+        <option value="$PROJECT_DIR$/shortcodes/cart.php" />
+        <option value="$PROJECT_DIR$/shortcodes/process_product_page_shortcode.php" />
+        <option value="$PROJECT_DIR$/shortcodes/course.php" />
+        <option value="$PROJECT_DIR$/index.php.bk" />
+        <option value="$PROJECT_DIR$/pages/admin/dashboard_page.php" />
+        <option value="$PROJECT_DIR$/pages/admin/course_modify_page.php" />
+        <option value="$PROJECT_DIR$/test_quiz.php" />
+        <option value="$PROJECT_DIR$/class/LMS_HtmlForm.class.php" />
+        <option value="$PROJECT_DIR$/inc/LMS_Defines.php" />
+        <option value="$PROJECT_DIR$/class/LMS_AddQuestionPage.class.php" />
+        <option value="$PROJECT_DIR$/class/LMS_AddQuestionHTMLForm.class.php" />
+        <option value="$PROJECT_DIR$/inc/wplms_log.inc.php" />
+        <option value="$PROJECT_DIR$/class/htmlform/LMS_HtmlForm.class.php" />
+        <option value="$PROJECT_DIR$/class/pages/LMS_CoursePage.class.php" />
+        <option value="$PROJECT_DIR$/class/htmlform/LMS_QuizModifyHTMLForm.class.php" />
+        <option value="$PROJECT_DIR$/class/htmlform/LMS_ModuleHTMLForm.class.php" />
+        <option value="$PROJECT_DIR$/class/htmlform/LMS_CoursePermissionsHTMLForm.class.php" />
+        <option value="$PROJECT_DIR$/class/htmlform/LMS_CourseHTMLForm.class.php" />
+        <option value="$PROJECT_DIR$/class/htmlform/LMS_AddQuestionHTMLForm.class.php" />
+        <option value="$PROJECT_DIR$/class/pages/LMS_CoursePermissionsPage.class.php" />
+        <option value="$PROJECT_DIR$/class/LMS_StudentCourses.class.php" />
+        <option value="$PROJECT_DIR$/class/LMS_School.class.php" />
+        <option value="$PROJECT_DIR$/shortcodes/lessons.php" />
+        <option value="$PROJECT_DIR$/shortcodes/take_quiz.php" />
+        <option value="$PROJECT_DIR$/class/pages/LMS_FrontEndLessonPage.class.php" />
+        <option value="$PROJECT_DIR$/shortcodes/mycourse.php" />
+        <option value="$PROJECT_DIR$/testpage.php" />
+        <option value="$PROJECT_DIR$/pages/admin/all_students.php" />
+        <option value="$PROJECT_DIR$/class/LMS_UserProgress.php" />
+        <option value="$PROJECT_DIR$/test_addquestion.php" />
+        <option value="$PROJECT_DIR$/pages/admin/quiz_modify.php" />
+        <option value="$PROJECT_DIR$/class/pages/LMS_QuizModifyPage.class.php" />
+        <option value="$PROJECT_DIR$/class/pages/LMS_ModulePage.class.php" />
+        <option value="$PROJECT_DIR$/pages/admin/quiz_summary.php" />
+        <option value="$PROJECT_DIR$/class/LMS_PageFunctions.class.php" />
+        <option value="$PROJECT_DIR$/class/LMS_OnlineSchoolLibrary.class.php" />
+        <option value="$PROJECT_DIR$/shortcodes/choose_product.php" />
+        <option value="$PROJECT_DIR$/wp-lms.php" />
+        <option value="$PROJECT_DIR$/class/LMS_ProductCourseAccess.php" />
+        <option value="$PROJECT_DIR$/class/LMS_DBFunctions.class.php" />
+        <option value="$PROJECT_DIR$/pages/admin/devel_area_page.php" />
+        <option value="$PROJECT_DIR$/class/LMS_Student.php" />
+        <option value="$PROJECT_DIR$/class/LMS_EnrolledCourses.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="333" />
+    <option name="y" value="44" />
+    <option name="width" value="1500" />
+    <option name="height" value="1149" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Tests" />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-lms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-lms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shortcodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-lms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-lms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-lms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-lms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-lms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online-school" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-lms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htmlform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="recentsLimit" value="5" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="SearchEverywhereHistoryKey" value="LMS_PLUGIN_PATH&#9;null&#9;null" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/inc" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/class/pages" />
+      <recent name="$PROJECT_DIR$/archive" />
+      <recent name="$PROJECT_DIR$/admin" />
+      <recent name="$PROJECT_DIR$/inc" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.studentCourses-add.php">
+    <configuration default="false" name="online-school" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="studentCourses-add.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/online-school/admin/studentCourses-add.php">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.online-school" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.studentCourses-add.php" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.studentCourses-add.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.online-school" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b76e6193-6a50-4921-9a46-a0c2cd519437" name="Default" comment="" />
+      <created>1429573574308</created>
+      <option name="number" value="Default" />
+      <updated>1429573574308</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Added choose Product shortcode">
+      <created>1444432568251</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1444432568251</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added choose Product shortcode">
+      <created>1444955537388</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1444955537388</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="333" y="44" width="1500" height="1149" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.242" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3559322" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Added choose Product shortcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added choose Product shortcode" />
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>$PROJECT_DIR$/../../..</wordpressPath>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/inc/wplms_database.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LMS_Log.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/wplms_log.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="0">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/wplms_defines.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/htmlform/LMS_AddQuestionHTMLForm.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.049889136" vertical-offset="0" max-vertical-offset="0">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/htmlform/LMS_CoursePermissionsHTMLForm.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29933482" vertical-offset="0" max-vertical-offset="0">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/htmlform/LMS_ModuleHTMLForm.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06651885" vertical-offset="0" max-vertical-offset="0">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/addmodule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/admin/dashboard_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="0">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortcodes/lessons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortcodes/take_quiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-33.833332" vertical-offset="0" max-vertical-offset="0">
+          <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/pages/LMS_FrontEndLessonPage.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortcodes/mycourse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/admin/all_students.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_addquestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/pages/LMS_CoursePermissionsPage.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="0">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/pages/LMS_CoursePage.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.016629713" vertical-offset="0" max-vertical-offset="0">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/pages/LMS_AddQuestionPage.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/pages/LMS_Page.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/admin/course_modify_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81707317" vertical-offset="0" max-vertical-offset="0">
+          <caret line="91" column="76" selection-start-line="91" selection-start-column="58" selection-end-line="91" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/sets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3991131" vertical-offset="0" max-vertical-offset="0">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/wplms_admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.074074" vertical-offset="0" max-vertical-offset="0">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/admin/quiz_modify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.708334" vertical-offset="0" max-vertical-offset="0">
+          <caret line="150" column="61" selection-start-line="150" selection-start-column="61" selection-end-line="150" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/admin/quiz_summary.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1095">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/htmlform/LMS_HtmlForm.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1185">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/htmlform/LMS_CourseHTMLForm.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1005">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="14880" max-vertical-offset="34965">
+          <caret line="992" column="22" selection-start-line="992" selection-start-column="15" selection-end-line="992" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mystyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8965517" vertical-offset="600" max-vertical-offset="1470">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mycourses.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/pages/LMS_QuizModifyPage.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="3015">
+          <caret line="76" column="26" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/pages/LMS_ModulePage.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1560">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/htmlform/LMS_QuizModifyHTMLForm.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1050">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/LMS_Defines.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.3490012" vertical-offset="0" max-vertical-offset="3210">
+          <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="2820">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortcodes/course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="18.208334" vertical-offset="587" max-vertical-offset="1755">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/courses.php.bk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2205">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortcodes/choose_product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.098039" vertical-offset="304" max-vertical-offset="1170">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#4;n#tbody#0;n#table#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LMS_UserProgress.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.875" vertical-offset="75" max-vertical-offset="6150">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LMS_School.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.625" vertical-offset="3174" max-vertical-offset="4920">
+          <caret line="240" column="40" selection-start-line="240" selection-start-column="40" selection-end-line="240" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/ProvisionService.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LMSRepository.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.33112583" vertical-offset="300" max-vertical-offset="1890">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LMS_OnlineSchoolLibrary.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.82353" vertical-offset="0" max-vertical-offset="2160">
+          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LMS_PageFunctions.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.5" vertical-offset="0" max-vertical-offset="1470">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-lms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2941175" vertical-offset="4590" max-vertical-offset="6105">
+          <caret line="324" column="71" selection-start-line="324" selection-start-column="71" selection-end-line="324" selection-end-column="71" />
+          <folding>
+            <element signature="e#6#273#0#PHP" expanded="true" />
+            <marker date="1445020075000" expanded="true" signature="8126:8226" placeholder="..." />
+            <marker date="1445020075000" expanded="true" signature="8687:8787" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/admin/devel_area_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.647059" vertical-offset="117" max-vertical-offset="3615">
+          <caret line="27" column="81" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#!!top" expanded="true" />
+            <marker date="1445633013000" expanded="true" signature="1419:1518" placeholder="..." />
+            <marker date="1445633013000" expanded="true" signature="1535:1683" placeholder="..." />
+            <marker date="1445633013000" expanded="true" signature="2006:2105" placeholder="..." />
+            <marker date="1445633013000" expanded="true" signature="2122:2258" placeholder="..." />
+            <marker date="1445633013000" expanded="false" signature="2211:2225" placeholder="..." />
+            <marker date="1445633013000" expanded="true" signature="2275:2374" placeholder="..." />
+            <marker date="1445633013000" expanded="true" signature="2469:2723" placeholder="..." />
+            <marker date="1445633013000" expanded="true" signature="2538:2683" placeholder="..." />
+            <marker date="1445633013000" expanded="true" signature="2538:2723" placeholder="..." />
+            <marker date="1445633013000" expanded="true" signature="3229:3362" placeholder="..." />
+            <marker date="1445633013000" expanded="true" signature="3277:3362" placeholder="..." />
+            <marker date="1445633013000" expanded="true" signature="3749:3805" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LMS_DBFunctions.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.392157" vertical-offset="8320" max-vertical-offset="12990">
+          <caret line="578" column="0" selection-start-line="578" selection-start-column="0" selection-end-line="578" selection-end-column="0" />
+          <folding>
+            <marker date="1445630800000" expanded="true" signature="1087:1116" placeholder="SELECT * FRO..table..." />
+            <marker date="1445630800000" expanded="true" signature="1506:1542" placeholder="SELECT count..table..." />
+            <marker date="1445630800000" expanded="true" signature="3527:3608" placeholder="SELECT * fro..QUIZ_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="5042:5148" placeholder="SELECT quiz...wp_lms_quizzes..." />
+            <marker date="1445630800000" expanded="true" signature="8515:8573" placeholder="SELECT * FRO..LESSONS_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="8897:9003" placeholder="SELECT * FRO..LESSONS_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="9242:9315" placeholder="SELECT * FRO..LESSONS_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="9621:9635" placeholder="SELECT * FRO..COURSES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="9934:10006" placeholder="SELECT * FRO..COURSES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="10288:10360" placeholder="SELECT * FRO..COURSES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="11941:12032" placeholder="SELECT * FRO..MODULE_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="15050:15064" placeholder="SELECT * FRO..PRODUCTS_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="15945:16118" placeholder="select produ..PRODUCTS_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="16365:16427" placeholder="SELECT * FRO..PRODUCTS_COURSES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="16481:16495" placeholder="SELECT * FRO..PRODUCTS_COURSES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="16833:16999" placeholder="SELECT m.* F..MODULE_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="17039:17128" placeholder="SELECT * FRO..MODULE_COURSE_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="17407:17480" placeholder="SELECT * FRO..MODULE_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="17782:17860" placeholder="SELECT * FRO..MODULE_COURSE_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="18243:18400" placeholder="select cours..COURSES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="18813:18827" placeholder="SELECT * FRO..PRODUCTS_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="23140:23276" placeholder="SELECT * FRO..USER_COURSES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="23541:23667" placeholder="SELECT * FRO..USER_COURSES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="23907:23987" placeholder="SELECT * FRO..USER_COURSES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="24322:24402" placeholder="DELETE FROM ..." />
+            <marker date="1445630800000" expanded="true" signature="24662:24742" placeholder="DELETE FROM ..." />
+            <marker date="1445630800000" expanded="true" signature="24950:25134" placeholder="SELECT userm..USER_COURSES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="25180:25261" placeholder="SELECT * FRO..USER_MODULES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="25768:25994" placeholder="SELECT userm..USER_COURSES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="26046:26230" placeholder="SELECT userm..USER_COURSES_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="26477:26570" placeholder="SELECT * fro..QUIZ_QUEST_TABLE..." />
+            <marker date="1445630800000" expanded="true" signature="27100:27283" placeholder="SELECT * FRO..wp_lms_lessons..." />
+            <marker date="1445630800000" expanded="true" signature="27382:27575" placeholder="SELECT * FRO..wp_lms_lessons..." />
+            <marker date="1445630800000" expanded="true" signature="27999:28150" placeholder="SELECT * FRO..wp_lms_user_progress..." />
+            <marker date="1445630800000" expanded="true" signature="29032:29097" placeholder="SELECT * FRO..wp_lms_product_course_access..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LMS_ProductCourseAccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="795">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LMS_StudentCourses.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="705">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LMS_StudentCourseList.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-40.958332" vertical-offset="802" max-vertical-offset="1890">
+          <caret line="119" column="1" selection-start-line="25" selection-start-column="4" selection-end-line="119" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LMS_Student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="660">
+          <caret line="32" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LMS_EnrolledCourses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83949417" vertical-offset="787" max-vertical-offset="2085">
+          <caret line="110" column="52" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="52" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

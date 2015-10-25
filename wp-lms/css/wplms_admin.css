@@ -1,0 +1,258 @@
+/* Course Summary */
+#wplms_tbl_course_summary {
+    margin: 10px 0;
+}
+
+#wplms_tbl_course_summary #course_id {
+    width: 50px;
+}
+
+#wplms_tbl_course_summary .course_title {
+    width: 150px;
+    padding-right: 15px;
+}
+
+#wplms_tbl_course_summary .course_desc {
+    width: 30%;
+}
+
+#wplms_tbl_course_summary .course_status {
+    width: 10%;
+}
+
+td.course_desc {}
+
+#wplms_tbl_course_summary .course_settings {
+    width: 20%;
+}
+
+#wplms_tbl_course_summary .total_units {
+    width: 100px;
+}
+
+#wplms_tbl_course_summary  .course_modules {
+    width: 250px;
+}
+
+#wplms_tbl_course_summary  .actions {
+    width: 220px;
+}
+
+#wplms_tbl_course_summary .wpcw_tbl_row_status span {
+    color: red;
+    font-size: 110%;
+    font-weight: bold;
+    display: block;
+    background: url('../img/icon_warning.png') no-repeat left bottom;
+    line-height: 22px;
+    height: 22px;
+    padding: 10px 10px 0 28px;
+    margin-left: 10px;
+}
+
+
+
+
+
+#wplms_tbl_student_list {
+    margin: 10px 0;
+}
+
+#wplms_tbl_student_list #user_id {
+    width: 50px;
+}
+
+#wplms_tbl_student_list .username {
+    width: 150px;
+    padding-right: 15px;
+}
+
+
+#wplms_tbl_student_list .details {
+    width: 220px;
+}
+
+
+#wplms_tbl_student_list .course_progress {
+    width: 200px;
+}
+
+#wplms_tbl_student_list .actions {
+    width: 150px;
+}
+
+#wplms_tbl_student_list .wplms_tbl_row_status span {
+    color: red;
+    font-size: 110%;
+    font-weight: bold;
+    display: block;
+    background: url('../img/icon_warning.png') no-repeat left bottom;
+    line-height: 22px;
+    height: 22px;
+    padding: 10px 10px 0 28px;
+    margin-left: 10px;
+}
+
+
+
+/* Other Fields */
+.widefat .wpcw_col_training_courses_access {
+    padding-top: 10px;
+}
+
+
+
+/* General Tables */
+.wpcw_tbl .course_title {
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.wpcw_tbl .actions {
+    font-weight: bold;
+    padding: 5px 0 5px 0;
+}
+
+.wpcw_tbl .actions_right {
+    text-align: right;
+}
+
+.wpcw_tbl .actions li {
+    font-weight: normal;
+}
+
+.wpcw_tbl .actions .wpcw_action_link_list li.wpcw_action_item_newline {
+    display: block;
+}
+
+.wpcw_tbl .wpcw_tbl_label {
+    text-align: right;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.wpcw_tbl .actions ul {
+    margin: 0;
+    padding: 0;
+}
+
+.wpcw_tbl .actions ul li {
+    padding: 0;
+    margin: 0 0 6px;
+}
+
+.wpcw_tbl .wpcw_center {
+    text-align: center;
+}
+
+.wpcw_tbl .wpcw_statistic {
+    font-size: 115%;
+}
+
+.wpcw_tbl .actions .wpcw_action_link_list li {
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.wpcw_action_link_delete {
+    font-weight: normal;
+}
+
+.wpcw_tbl_row_status_pre td {
+    border-bottom: 0;
+}
+
+.wpcw_tbl_row_status td {
+    border-top: 0;
+}
+
+.wpcw_no_users td {
+    padding: 30px;
+}
+
+/* Table - Paging */
+.wpcw_tbl_paging {
+    float: right;
+}
+
+
+
+/* Progress Bars */
+.wplms_progress_wrap {
+    display: block;
+}
+
+.wplms_col_training_courses  .wplms_progress_wrap {
+    margin-bottom: 4px;
+}
+
+.wplms_progress {
+    display: inline-block;
+    width: 100px;
+    height: 22px;
+    margin: 0 auto;
+    vertical-align: middle;
+    padding: 1px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #efefef;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.wplms_progress_bar {
+    display: block;
+    background-color: #5CB85C;
+    width: 0%;
+    height: 100%;
+    font-size: 12px;
+    color: #FFF;
+    text-align: center;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+    background-color: #5CB85C;
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255,
+    255, 0.15) ), color-stop(0.25, rgba(0, 0, 0, 0) ),
+    color-stop(0.5, rgba(0, 0, 0, 0) ),
+    color-stop(0.5, rgba(255, 255, 255, 0.15) ),
+    color-stop(0.75, rgba(255, 255, 255, 0.15) ),
+    color-stop(0.75, rgba(0, 0, 0, 0) ), to(rgba(0, 0, 0, 0) ) );
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15)
+    25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%,
+    rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%,
+    rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0) );
+    background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15)
+    25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent );
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%,
+    rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15)
+    50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 0) );
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-repeat: repeat-x;
+    -webkit-transition: width 0.6s ease;
+    -moz-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+    -webkit-background-size: 40px 40px;
+    -moz-background-size: 40px 40px;
+    -o-background-size: 40px 40px;
+    background-size: 40px 40px;
+}
+
+.wplms_progress_percent {
+    display: inline-block;
+    line-height: 22px;
+    margin-left: 4px;
+    text-align: center;
+}

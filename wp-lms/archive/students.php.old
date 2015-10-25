@@ -1,0 +1,197 @@
+<?php
+/**
+**/
+
+require('conf.php');
+
+define(ADMIN_PACKAGESPAGE, "&action=showpackages");
+define(ADMIN_SHOWCOURSEPAGE, "&action=showcourses");
+define(ADMIN_EDITSTUDENTPAGE, "&action=addNew");
+define(ADMIN_DELETESTUDENTPAGE, "&action=deleteStudent");
+
+
+function getAdminUrlPage($whichPage,$isSSL=false){
+	if($isSSL)
+		$_url = "https://";
+	else 
+		$_url = "http://";
+
+	$_url .= $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].$whichPage;
+	return $_url;
+}
+
+/* 
+	Action:
+	- 'addnew' - Add New Student, Show Page to add/edit student - editstudent.phpo
+	- 'showpackages' - Show Packages of Student - showpackages.php
+	- 'showcourses' - Show Course of Student - showcourses.php
+	- default - Show all Students in School
+*/
+
+if($_GET['action']=='addNew'){
+	require('editstudent.php');
+}else if($_GET['action']=='showpackages') {
+	require('showpackages.php');
+	exit();
+}else if($_GET['action']=='showcourses') {
+	require('showcourses.php');
+	exit();
+}else if($_GET['action']=='deletestduent'){
+	require('deletestudent.php');
+	exit();
+}else{
+	// SHOW ALL STUDENTS
+
+}
+
+$packagesurl=getAdminUrlPage(ADMIN_PACKAGESPAGE,is_ssl())."&action=showpackages";
+$redirecturl= "&redirect=".urlencode(getAdminUrlPage("",is_ssl()));
+$showcoursesurl=getAdminUrlPage(ADMIN_SHOWCOURSEPAGE,is_ssl())."&action=showcourses";
+
+
+echo "<pre>".getAdminUrlPage(ADMIN_SHOWCOURSEPAGE,is_ssl())."</pre>";
+
+
+$url="https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$url1=$url."&action=addNew&redirect=".urlencode($url);
+
+
+
+/*
+if($_GET['action']=='addNew') {
+	require('editstudent.php');
+	//exit();
+}else{
+	$packagesurl=$url."&action=showpackages";
+	$redirecturl = "&redirect=".urlencode($url);
+	$showcoursesurl=$url."&action=showcourses";
+
+	if($_GET['action']=='showpackages') {
+		require('showpackages.php');
+		exit();
+	}
+	if($_GET['action']=='showcourses') {
+		require('showcourses.php');
+		exit();
+}*/
+
+ /*
+if(isset($_GET['delId']) && $_GET['delId'] != '') {
+	
+	$query="DELETE FROM tbl_users WHERE id =".$_GET['delId'];
+	$re1=mysql_query($query);
+	
+	$location = $_SERVER['HTTP_REFERER'].'&msg=del';
+?>
+	<script type="text/javascript">
+	window.location = '<?php echo $location; ?>';
+	</script>
+	
+<?php exit; } ?>
+*/
+?>
+
+<div class="wrap">
+    <div id="icon-edit-pages" class="icon32"></div>
+    <h2>Students<a class="add-new-h2" href="<?php echo $url1; ?>">Add New</a></h2>
+ 	<p class="search-box">
+		<label for="post-search-input" class="screen-reader-text">Search Student:</label>
+		<form action="<?php $url ?>" method="POST">
+		<input type="search" value="" name="search" id="postsearchinput">
+		<input type="submit" value="Searchstudent" class="button" id="searchsubmit" name="searchsubmit"></form>
+		( Enter Student's First Name / Last Name / Username / Email to Search )
+	</p>	
+</div>
+
+<form action="" method="post">
+		
+<table class="widefat">
+<thead>
+    <tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Username</th>
+        <th>Email Id</th>
+        <th>Courses</th>
+        <th>Packages</th>
+
+     </tr>
+</thead>
+<tfoot>
+    <tr>
+
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Username</th>
+        <th>Email Id</th>
+        <th>Courses</th>
+        <th>Packages</th>
+    </tr>
+</tfoot>
+<tbody>
+
+<?php
+if($_POST['searchsubmit']=="Searchstudent")
+
+{
+
+ $sql = "SELECT * FROM `tbl_users` WHERE `first_name` like '%" . $_POST['search'] . "%' or `last_name` like '%" . $_POST['search'] . "%' or `user_email` like '%" . $_POST['search'] . "%' or `user_login` like '%" . $_POST['search'] . "%'";
+ 
+			$search_qry = mysql_query($sql);
+			
+			while($search_result = mysql_fetch_array($search_qry)) {
+			  echo "<tr>
+	
+			<td>".$search_result['first_name']."<div class=\"row-actions\">
+					<span class=\"edit\"><a href='".$url1."&userId=".$search_result['id']."'>Edit</a>|</span>
+					<span class=\"trash\"><a href='".$url."&delId=".$search_result['id']."' onclick='return confirm(\" Are you sure! You want to delete this record \")'>Delete</a>  </span>
+					
+				</div></td>";
+	  echo "<td>".$search_result['last_name']."</td>";
+	  echo "<td>".$search_result['user_login']."</td>";
+	  echo "<td>".$search_result['user_email']."
+	  
+	  </td>";
+	  echo "<td><span class=\"edit\"><a href='".$showcoursesurl."&userid=".$search_result['id']."'>Courses</a> </span></td>";
+	  echo "<td><a href='".$packagesurl.'&userid='.$search_result['id']."'>Packages</a></td>
+	 
+	   </tr>";
+			}
+
+}
+else
+{
+	$qer1="select * from tbl_users order by id desc";
+
+$re1=mysql_query($qer1);
+
+	
+while($row1=mysql_fetch_array($re1)) { 
+	
+	
+	  echo "<tr>
+	
+			<td>".$row1['first_name']."<div class=\"row-actions\">
+					<span class=\"edit\"><a href='".$url1."&userId=".$row1['id']."'>Edit</a>|</span>
+					<span class=\"trash\"><a href='".$url."&delId=".$row1['id']."' onclick='return confirm(\" Are you sure! You want to delete this record \")'>Delete</a></span>
+					
+					
+				</div></td>";
+	  echo "<td>".$row1['last_name']."</td>";
+	  echo "<td>".$row1['user_login']."</td>";
+	  echo "<td>".$row1['user_email']."
+	  
+	  </td>";
+	  echo "<td><span class=\"edit\"><a href='".$showcoursesurl."&userid=".$row1['id']."'>Courses</a> </span></td>";
+	  echo "<td><a href='".$packagesurl.'&userid='.$row1['id']."'>Packages</a></td>
+	 
+	   </tr>";
+	   
+		
+	  }
+}
+?>
+</tbody>
+</table>
+</form>
+

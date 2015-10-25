@@ -1,0 +1,608 @@
+<?php
+/*
+ Plugin Name: Online School
+Description: Online School
+Version: 1.1
+Stable tag: 1.1
+
+License:
+==============================================================================
+Copyright 2011-2012 Troy G  (email : info@leadtechsolution.com)
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+*/
+
+define("LMS_PLUGIN_PATH", ABSPATH."wp-content/plugins/online-school/");
+define("LMS_INCLUDE_DIR", LMS_PLUGIN_PATH."inc/");
+define("LMS_ADMIN_DIR", LMS_PLUGIN_PATH."admin/");
+define("LMS_HOOK_TEMPLATE_DIR",LMS_PLUGIN_PATH."hook-templates/");
+
+require(ABSPATH."wp-includes/pluggable.php");
+require('conf.php');
+define('QUIZES', dirname (__FILE__));
+
+add_action('init', hhs_custom_post_type_init);
+function hhs_custom_post_type_init() {
+	$labels = array(
+		'name' => _x('Topic', 'Topics'),	
+		'singular_name' => _x('Topic', 'Topic'),	
+		'add_new' => _x('Add New', 'topic'),
+		'add_new_item' => __('Add New Topic'),
+		'edit_item' => __('Edit Topic'),
+		'new_item' => __('New Topic'),
+		'all_items' => __('All Topics'),	
+		'view_item' => __('View Topic'),	
+		'search_items' => __('Search Topics'),	
+		'not_found' =>  __('No Topics found'),	
+		'not_found_in_trash' => __('No Topics found in Trash'), 	
+		'parent_item_colon' => __('Parent Topic'),	
+		'menu_name' => __('Topics')
+	);
+
+	$args = array(	
+		'labels' => $labels,	
+		'public' => true,	
+		'publicly_queryable' => true,	
+		'show_ui' => true,	
+		'show_in_menu' => true,	
+		'query_var' => true,	
+		'rewrite' => true,	
+		'capability_type' => 'post',	
+		'has_archive' => true,	
+		'hierarchical' => true,	
+		'menu_position' => null,	
+		'supports' => array( 'title','editor', 'excerpt','page-attributes' )
+	);	
+	register_post_type('topic',$args);	
+	
+	
+	$labels = array(	
+		'name' => _x( 'Course', 'Course' ),	
+		'singular_name' => _x( 'Course', 'Course' ),	
+		'search_items' =>  __( 'Search Courses' ),	
+		'all_items' => __( 'All Courses' ),	
+		'parent_item' => __( 'Parent Course' ),	
+		'parent_item_colon' => __( 'Parent Course:' ),	
+		'edit_item' => __( 'Edit Course' ),	
+		'update_item' => __( 'Update Course' ),	
+		'add_new_item' => __( 'Add New Course' ),	
+		'new_item_name' => __( 'New Course Name' ),	
+		'menu_name' => __( 'Courses Seo' ),	
+	);
+
+	register_taxonomy('course', 'topic', array ('hierarchical' => true, 'labels' => $labels));
+	
+	
+	$labels = array(	
+		'name' => _x( 'Package', 'Package' ),	
+		'singular_name' => _x( 'Package', 'Package' ),	
+		'search_items' =>  __( 'Search Packages' ),	
+		'all_items' => __( 'All Packages' ),	
+		'parent_item' => __( 'Parent Package' ),	
+		'parent_item_colon' => __( 'Parent Package:' ),	
+		'edit_item' => __( 'Edit Package' ),	
+		'update_item' => __( 'Update Package' ),	
+		'add_new_item' => __( 'Add New Package' ),	
+		'new_item_name' => __( 'New Package Name' ),	
+		'menu_name' => __( 'Packages Seo' ),	
+	);
+
+	register_taxonomy('package', 'topic', array ('hierarchical' => true, 'labels' => $labels));
+	
+}
+
+	function wptuts_buttons() {
+		add_filter( "mce_external_plugins", "wptuts_add_buttons" );
+		add_filter( 'mce_buttons', 'wptuts_register_buttons' );
+	}
+	function wptuts_add_buttons( $plugin_array ) {
+		$plugin_array['wptuts'] = plugins_url('/online-school/wptuts-plugin.js',dirname(__FILE__));
+		return $plugin_array;
+	}
+	function wptuts_register_buttons( $buttons ) {
+		array_push( $buttons,'showmodule','module_position' ); // dropcap', 'recentposts
+		return $buttons;
+	}
+	
+    define('ONLINESCHOOL_PLUGIN_NAME',dirname(plugin_basename(__FILE__)));
+    define('ONLINESCHOOL_PATH',WP_PLUGIN_DIR.'/'.ONLINESCHOOL_PLUGIN_NAME);
+    define('ONLINESCHOOL_URL',plugins_url($path = '/'.ONLINESCHOOL_PLUGIN_NAME));
+
+    add_action('admin_menu', 'ONLINESCHOOL_MENU');
+
+    function ONLINESCHOOL_MENU()
+    {
+		
+        add_menu_page('Online School', 'Online School', 'administrator','onlineschool','onlineschool_dashboard');
+        add_submenu_page('onlineschool','Packages', 'Packages', 'administrator','addpackage','addpackage_code');
+        add_submenu_page('onlineschool','Courses', 'Courses', 'administrator','courses','courses_code');
+		add_submenu_page('onlineschool','Modules', 'Modules', 'administrator','addmodule','addmodule_code');
+		add_submenu_page('onlineschool','Sets', 'Sets', 'administrator','addsets','addSets_code');
+		add_submenu_page('onlineschool','Students', 'Students', 'administrator','students','students_code');
+		add_submenu_page('options.php','Students', 'Student Courses', 'administrator','studentCourses','studentCourses_code');
+	}
+
+	add_action('admin_menu','no_menu');
+
+	function no_menu(){
+		add_submenu_page(null,'Stud', 'Student Courses', 'administrator','studentCourses','studentCourses_code');
+	}
+
+
+/*
+	function remove_menus(){
+		remove_submenu_page('onlineschool','studentCourses');
+
+	}
+
+	add_action('admin_menu','remove_menus', 999);
+*/
+
+
+    function onlineschool_dashboard(){
+
+        require_once ONLINESCHOOL_PATH . "/dashboard.php";
+
+    }
+    
+    function addpackage_code(){
+		wptuts_buttons();
+        require_once ONLINESCHOOL_PATH . "/packages.php";
+
+    }
+    
+    function courses_code(){
+		wptuts_buttons();
+        require_once ONLINESCHOOL_PATH . "/courses.php";
+
+    }
+   	
+   	function addmodule_code(){
+
+        require_once ONLINESCHOOL_PATH . "/module.php";
+
+    }
+	
+	function addSets_code(){
+
+        require_once ONLINESCHOOL_PATH . "/sets.php";
+
+    }
+
+	function students_code(){
+
+        require_once ONLINESCHOOL_PATH . "/students.php";
+
+    }
+
+	function studentCourses_code(){
+		require_once ONLINESCHOOL_PATH . "/student_courses.php";
+	}
+	
+	
+	//## Create a page to allow courses to be added to students
+
+
+	/********************* Admin Styles/Scripts *****************/
+	add_action('admin_enqueue_scripts', 'hhs_custom_wp_admin_style');
+	function hhs_custom_wp_admin_style(){
+		wp_register_style( 'custom_wp_admin_css_default', plugin_dir_url( __FILE__ ).'css/style.css' );
+		wp_enqueue_style( 'custom_wp_admin_css_default' );
+		wp_enqueue_script('media-upload');
+		wp_enqueue_script('thickbox');
+		wp_register_script( 'custom_wp_admin_script_default', plugin_dir_url( __FILE__ ).'js/schools_scripts.js',array('media-upload','thickbox'));
+		wp_enqueue_script( 'custom_wp_admin_script_default' );
+		wp_enqueue_style('thickbox');
+		
+		wp_register_script( 'custom_wp_admin_script_default1', plugin_dir_url( __FILE__ ).'js/courses.js');
+		wp_enqueue_script( 'custom_wp_admin_script_default1' );
+		wp_register_script( 'custom_wp_admin_script_default2', plugin_dir_url( __FILE__ ).'script.js');
+		wp_enqueue_script( 'custom_wp_admin_script_default2' );
+		
+		
+		
+		global  $pagenow;
+		if( $pagenow == 'edit-tags.php' ) {
+			if(isset($_GET['taxonomy']) && $_GET['taxonomy'] !='category') {
+				wp_register_script( 'custom_wp_admin_script_default2', plugin_dir_url( __FILE__ ).'js/taxonomy.js');
+				wp_enqueue_script( 'custom_wp_admin_script_default2' );
+			}	
+		}	
+	}
+	/********************* Admin Styles/Scripts *****************/
+	
+	/************ Rich Text Editor for categories/taxonomies *******
+		add_action('init', hhs_rich_editor_for_category);
+		function hhs_rich_editor_for_category() {
+			require_once 'rich-text-editor/rich-text-tags.php';
+		}
+	/************ Rich Text Editor for categories/taxonomies ********/
+	
+	
+	
+	/************ Ajax Actions ********/
+	
+	add_action('wp_ajax_add_new_topic', 'add_new_topic');
+	function add_new_topic() {
+		global $wpdb; // this is how you get access to the database
+		if(isset($_POST['topicid']) && !empty($_POST['topicid'])) {
+					mysql_query("UPDATE tbl_topics SET topic_name='".$_POST['topicname']."' WHERE id=".$_POST['topicid']);
+
+		} else {		
+			$moduleId = $_POST['moduleID'];
+			$modulecourses = array();
+			$modulepackages = array();
+			
+			$course_qry = mysql_query("SELECT c.term_id FROM module_course mc LEFT JOIN course c ON c.id= mc.course_id WHERE mc.module_id = $moduleId");
+			$modulecourses = array();
+			while($course_result = mysql_fetch_array($course_qry)) {
+				$modulecourses[] = $course_result['term_id'];
+			}
+			
+			$package_qry = mysql_query("SELECT p.term_id FROM  module_package mp LEFT JOIN package p ON p.id=mp.package_id WHERE mp.module_id = $moduleId");
+			$modulepackages = array();
+			while($package_result = mysql_fetch_array($package_qry)) {
+				$modulepackages[] = $package_result['term_id'];
+			}
+			
+			
+			
+			
+			$my_post = array(
+				  'post_title'    => $_POST['topicname'],
+				  'post_content'  => '',
+				  'post_status'   => 'publish',
+				  'post_author'   => 1,
+				  'post_type'     => 'topic',
+				  'post_parent'	  => $_POST['modulePageID'],
+				  'tax_input'     => array( 'course' => $modulecourses, 'package'=>$modulepackages )
+				);
+
+			$post_id = wp_insert_post( $my_post, $wp_error );
+
+			$wpdb->insert('tbl_topics', array( 'topic_name' => $_POST['topicname'],'tbl_order' => $_POST['topicorder'],'module_id' => $_POST['moduleID'],'pageid' => $post_id));
+			@$lastinsertid = $wpdb->insert_id;
+			$qer1="select * from tbl_topics where id=".$lastinsertid." order by tbl_order";
+				$re1=mysql_query($qer1);
+				$row1=mysql_fetch_array($re1);
+					echo "<tr>
+						<td>
+							<input type='text' name='orders[]' value='".$row1['tbl_order']."' style='width:40px'>
+							<input type='hidden' name='topics[]' value='".$row1['id']."' style='width:40px'>
+						</td>
+						<td><span id='topic_name_".$row1['id']."'>".$row1['topic_name']."</span>
+							<div id='topic_row_".$row1['id']."' style='display:none'>
+								<input type='text' id='topic_".$row1['id']."' value='".$row1['topic_name']."' style='width:340px' />
+								<input type='button' value='Update' style='width:60px' onclick='editTopic(".$row1['id'].")'/>
+							</div>
+							<div class=\"row-actions\">
+								<span class=\"edit\"><a href='javascript:void(0)' onclick='editTopicRow(".$row1['id'].")'>Edit</a> </span>
+								<span class=\"edit\"><a href='".$_POST['URL']."&delId=".$row1['id']."'>Delete</a> </span>
+							</div>
+						</td>
+						<td><a href='".get_edit_post_link($row1['pageid'])."' target='_blank'>Content</td> 
+				   </tr>";
+				
+			/* echo "<tr>
+				<td>".$_POST['topicname']."</td>	 
+		   </tr>"; */
+		}
+		
+		die(); // this is required to return a proper result
+	}
+	add_action('wp_ajax_add_new_topic', 'add_new_topic');
+	
+/**********packege search*******************/
+
+	
+add_action('wp_ajax_search_packege', 'search_packege');
+	function search_packege() {
+		global $wpdb; // this is how you get access to the database
+		
+			 $sql = "SELECT * FROM package WHERE package_name LIKE '%" . $_POST['searchinput'] . "%' ORDER BY tbl_order ";
+			$search_qry = mysql_query($sql);
+			
+			while($search_result = mysql_fetch_array($search_qry)) {
+				//$a[] = $search_result['id'];
+				
+			$editurl='https://householdstafftraining.com/school-old/wp-admin/admin.php?page=addpackage&action=addNew&redirect=http%3A%2F%2Fhouseholdstafftraining.com%2Fschool-old%2Fwp-admin%2Fadmin.php%3Fpage%3Daddpackage&packId=4';
+					
+					echo "<tr>";
+		echo "<td><input type='text' name='order[]' size='8' style='width:30px' value='".$search_result['tbl_order']."' />
+				<input type='hidden' name='packs[]' size='8' style='width:30px' value='".$search_result['id']."' />
+			</td>";
+		echo "<td>".$search_result['package_name']."
+		<div class=\"row-actions\">
+				
+					<span class=\"view\"><a href='https://householdstafftraining.com/school-old/wp-admin/admin.php?page=addmodule&packageID=".$search_result['id']."'>Modules</a></span>
+					
+				</div>
+		
+		</td>";
+		echo "<td>$".$search_result['package_price']."</td>";
+		echo "<td>".$search_result['package_code']."</td>";
+	   	echo "</tr>";
+					
+		}
+		
+		die(); // this is required to return a proper result
+	}
+	add_action('wp_ajax_search_packege', 'search_packege');
+	
+	
+
+	
+	
+
+
+
+// /*****************add quizes************************/
+
+	add_action('wp_ajax_add_new_quize', 'add_new_quize');
+	function add_new_quize() {
+		global $wpdb; // this is how you get access to the database
+		/* echo '<pre>';
+		echo print_r($_POST); */
+		 $selectQuizeId="select id from quizes where module_id='".$_POST['moduleID']."' order by quize_order";
+		
+		$resultquizeid=mysql_query($selectQuizeId);
+		$fetchquizeid=mysql_fetch_array($resultquizeid);
+		if(!empty($fetchquizeid['id'])) {
+		 $updatequize ="UPDATE quizes SET title ='".$_POST['quizename']."',duration ='". $_POST['duration']."' WHERE id='".$fetchquizeid['id']."'";
+		
+					mysql_query($updatequize);
+
+		} else {		
+			$moduleId = $_POST['moduleID'];
+						
+			
+		
+			
+			$wpdb->insert('quizes', array( 'title' => $_POST['quizename'],'duration' => $_POST['duration'],'module_id' => $_POST['moduleID']));
+			@$lastinsertid = $wpdb->insert_id;
+			$qer1="select * from quizes where id=".$lastinsertid." order by quize_order";
+				$re1=mysql_query($qer1);
+				$row1=mysql_fetch_array($re1);
+					echo $ary =array('title' => $row1['title'], 'duration' => $row1['duration']);
+				
+			/* echo "<tr>
+				<td>".$_POST['topicname']."</td>	 
+		   </tr>"; */
+		}
+		
+		die(); // this is required to return a proper result
+	}
+	add_action('wp_ajax_add_new_quize', 'add_new_quize');
+	
+/***************** Add User Course *********************************/
+
+	add_action('wp_ajax_add_new_user_course', 'add_new_user_course');
+
+/**
+ *  Add New User Course
+ *
+ */
+	function add_new_user_course() {
+
+		//require_once(LMS_HOOK_TEMPLATE_DIR."add_new_user_course.php");
+
+		global $wpdb;
+		$id = $_POST['courseid'];
+		$result = mysql_query("SELECT * FROM course WHERE id='".$id."' order by tbl_order");
+		$course = mysql_fetch_array($result);
+		$moduleresult = mysql_query("SELECT * FROM `module` WHERE module_id in (select  module_id from module_course
+	where course_id='".$course['id']."') ORDER BY tbl_order");
+		$totalmodule = mysql_num_rows($moduleresult);
+		$split = floor($totalmodule)/2;
+		$setsql="SELECT * FROM course_sets WHERE course_id='".$course['id']."' ORDER BY set_order";
+		$SectionsResult = mysql_query($setsql);
+		$i=0;
+
+
+		?>
+		
+	<form action="#" method="post">
+		<table cellspacing="0" cellpadding="4" border="1" width="550">
+		<tbody>
+		<tr>
+		<td class="header" align="center" colspan="3" bgcolor="#990000"  style="color:#ffffff;"><b><?php echo $course['cname']; ?></b></td>
+		</tr>
+		<tr>
+		<td class="header" align="center" colspan="3"><b>&nbsp;</b></td>
+		</tr>
+		<tr>
+		<td bgcolor="#ffffff" align="center" width="20"><input type="radio" name="setpicked" checked="checked" value="<?php echo $course['cprice']; ?>"  onclick="selectcours('full')" ></td>
+		<td bgcolor="#ffffff"><b>Full Course of <?php echo $totalmodule;?> Modules</b></td>
+		<td bgcolor="#ffffff" width="200" align="center"><b> $<?php echo $course['cprice']; ?></b></td>
+		</tr>
+		<tr>
+		<td class="header" align="center" colspan="3"><b>&nbsp;</b></td>
+		</tr>
+		<tr><td class="header" align="center" colspan="3" bgcolor="#990000" style="color:#ffffff;"><b>OR</b></td>
+		</tr>
+		<tr>
+		<td class="header" align="center" colspan="3"><b>&nbsp;</b></td>
+		</tr>
+		
+			<?php $i=1; while($sections = mysql_fetch_array($SectionsResult))
+			{
+			$set_modulesql="SELECT COUNT( * ) AS totalmod FROM  `sets_modules` WHERE set_id ='".$sections['id']."'";
+			$setmodule = mysql_query($set_modulesql);
+			$setmodules = mysql_fetch_array($setmodule);
+
+			?>
+
+			<tr>
+				<td bgcolor="#ffffff" width="20" align="center">
+				<?php 
+
+				if($i==1) { ?>
+				<input type="radio" name="setpicked" value="<?php echo $sections['set_price']; ?>" onclick="selectcours('set')">
+				<?php } else { ?>
+				<img src="<?php bloginfo('template_url');?>/images/radio.gif">
+				<?php } ?>
+				</td>
+				<td bgcolor="#ffffff"><b><?php echo $sections['set_name'].'&nbsp;-&nbsp;'. $setmodules['totalmod'] .'&nbsp;Modules'; ?></b></td>
+				<td bgcolor="#ffffff" width="200" align="center"><b> $<?php echo $sections['set_price']; ?></b></td>
+
+			</tr>
+			<?php $i++; } ?> 
+			<tr>
+				<td align="center" colspan="3">
+				<input type="hidden" name="course_id" value="<?php echo $course['id']; ?>" />
+				<input type="hidden" name="course_type" id="course_type" value="full" />
+				<input type="submit" value="Continue" name="countinue">
+				
+				</td>
+			</tr>
+		</tbody>
+		</table>
+	</form>
+
+		<script>
+function selectcours(str) {
+jQuery('#course_type').val(str);
+}
+
+</script>
+		
+		<?php
+		exit;
+	}
+	
+	add_action('wp_ajax_add_new_user_course', 'add_new_user_course');
+
+	
+/***************** Add User Course *********************************/	
+	
+add_action('wp_ajax_updatestatus', 'updatestatus');
+function updatestatus() {
+
+ if($_POST['aiaction']=="Inactive")
+{
+mysql_query('UPDATE `user_courses` SET status="Inactive" where  id="'.$_POST['id'].'"');
+}
+if($_POST['aiaction']=="Active")
+{
+mysql_query('UPDATE `user_courses` SET status="Active" where  id="'.$_POST['id'].'"');
+} 
+
+die(); // this is required to return a proper result
+}
+
+add_action('wp_ajax_updatestatus', 'updatestatus');
+add_action('wp_ajax_updatepack_status', 'updatepack_status');
+function updatepack_status() {
+
+ if($_POST['aiaction']=="Inactive")
+{
+mysql_query('UPDATE `user_packages` SET status="Inactive" where  id="'.$_POST['id'].'"');
+}
+if($_POST['aiaction']=="Active")
+{
+mysql_query('UPDATE `user_packages` SET status="Active" where  id="'.$_POST['id'].'"');
+} 
+
+die(); // this is required to return a proper result
+}
+
+add_action('wp_ajax_updatepack_status', 'updatepack_status');
+
+
+
+
+
+
+
+add_action('wp_ajax_add_new_user_package', 'add_new_user_package');
+
+	function add_new_user_package() {
+		global $wpdb;
+		$id = $_POST['packageid'];
+		$result = mysql_query("SELECT * FROM package WHERE id='".$id."' order by tbl_order");
+		$package = mysql_fetch_array($result);
+		$moduleresult = mysql_query("SELECT * FROM `module` WHERE module_id in (select  module_id from module_package
+	where package_id='".$package['id']."') ORDER BY tbl_order");
+		$totalmodule = mysql_num_rows($moduleresult);
+		$split = floor($totalmodule)/2;
+		$setsql="SELECT * FROM package_sets WHERE package_id='".$package['id']."' ORDER BY set_order";
+		$SectionsResult = mysql_query($setsql);
+		$i=0;
+		?>
+		
+	<form action="#" method="post">
+		<table cellspacing="0" cellpadding="4" border="1" width="550">
+		<tbody>
+		<tr>
+		<td class="header" align="center" colspan="3" bgcolor="#990000"  style="color:#ffffff;"><b><?php echo $package['package_name']; ?></b></td>
+		</tr>
+		<tr>
+		<td class="header" align="center" colspan="3"><b>&nbsp;</b></td>
+		</tr>
+		<tr>
+		<td bgcolor="#ffffff" align="center" width="20"><input type="radio" name="setpicked" checked="checked" value="<?php echo $package['package_price']; ?>"  onclick="selectcours('full')" ></td>
+		<td bgcolor="#ffffff"><b>Full package of <?php echo $totalmodule;?> Modules</b></td>
+		<td bgcolor="#ffffff" width="200" align="center"><b> $<?php echo $package['package_price']; ?></b></td>
+		</tr>
+		<tr>
+		<td class="header" align="center" colspan="3"><b>&nbsp;</b></td>
+		</tr>
+		<tr><td class="header" align="center" colspan="3" bgcolor="#990000" style="color:#ffffff;"><b>OR</b></td>
+		</tr>
+		<tr>
+		<td class="header" align="center" colspan="3"><b>&nbsp;</b></td>
+		</tr>
+		
+			<?php $i=1; while($sections = mysql_fetch_array($SectionsResult))
+			{
+			$set_modulesql="SELECT COUNT( * ) AS totalmod FROM  `sets_modules` WHERE set_id ='".$sections['id']."'";
+			$setmodule = mysql_query($set_modulesql);
+			$setmodules = mysql_fetch_array($setmodule);
+
+			?>
+
+			<tr>
+				<td bgcolor="#ffffff" width="20" align="center">
+				<?php 
+
+				if($i==1) { ?>
+				<input type="radio" name="setpicked" value="<?php echo $sections['set_price']; ?>" onclick="selectcours('set')">
+				<?php } else { ?>
+				<img src="<?php bloginfo('template_url');?>/images/radio.gif">
+				<?php } ?>
+				</td>
+				<td bgcolor="#ffffff"><b><?php echo $sections['set_name'].'&nbsp;-&nbsp;'. $setmodules['totalmod'] .'&nbsp;Modules'; ?></b></td>
+				<td bgcolor="#ffffff" width="200" align="center"><b> $<?php echo $sections['set_price']; ?></b></td>
+
+			</tr>
+			<?php $i++; } ?> 
+			<tr>
+				<td align="center" colspan="3">
+				<input type="hidden" name="package_id" value="<?php echo $package['id']; ?>" />
+				<input type="hidden" name="package_type" id="package_type" value="full" />
+				<input type="submit" value="Continue" name="countinue">
+				
+				</td>
+			</tr>
+		</tbody>
+		</table>
+	</form>
+
+		<script>
+function selectcours(str) {
+jQuery('#package_type').val(str);
+}
+
+</script>
+		
+		<?php
+		exit;
+	}
+	
+	add_action('wp_ajax_add_new_user_package', 'add_new_user_package');
+
+?>

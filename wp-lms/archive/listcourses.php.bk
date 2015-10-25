@@ -1,0 +1,142 @@
+<?php
+
+function getStudentCourses($sid){
+	global $wpdb;
+	$sql = "select * FROM user_courses where user_id='".$sid."'";
+	echo $sql;
+	$result = $wpdb->get_results($sql); 
+	return $result;
+}
+
+
+function getAllCourses(){
+    global $wpdb;
+    $sql = "SELECT * from courses;";
+    $result = $wpdb->get_results($sql);
+    return $result;
+}
+
+function getAvailableCoursesToStudent($sid){
+    global $wpdb;
+    $studentCourses = getStudentCourses($sid);
+    $result='';
+    $cid='';
+    $cnt = sizeOf($studentCourses);
+    if( $cnt > 0){
+        //Students have purchasd courses, exclude those from list
+        $totalCommas = $cnt - 1;
+        foreach($studentCourses as $course){
+            $cid .= '"' . $course->course_id . '"';
+            if($totalCommas > 0) {
+                $cid .= ",";
+                $totalCommas--;
+            }
+        }
+        $sql = "SELECT * FROM course where id NOT IN (".$cid.")"; 
+        $result = $wpdb->get_results($sql); 
+        echo "<pre>" . $result[0]->cname . "</pre>"; 
+    }else{
+        //Students have purchased no courses, just getAllCourses
+        $result = getAllCourses();
+    }
+    return result;
+}
+
+$availCourses = getAvailableCoursesToStudent($_GET['uid']);
+
+/*
+$studentCourses = getStudentCourses($_GET['uid']);
+echo '<pre>';
+print_r($studentCourses);
+echo 'count =' . sizeOf($studentCourses);
+echo '</pre>';
+*/
+?>
+
+	<div class="wrap"><h2>Add New Courses </h2></div>
+		<div>
+		<div class="textfieldname">Courses:</div>
+            <select name="courses" class="textfield" style="width:150px;" id="notcourses">
+            <option value="">Select Courses</option>
+                <?php
+                    
+
+						$usercourses = mysql_query("select course_id FROM user_courses where user_id='".$_GET['uid']."'");
+						$cid = '';
+						$numrows = mysql_num_rows($usercourses);
+						if($numrows > 0)
+						{
+						while($useres =mysql_fetch_array($usercourses))
+						{
+						
+						 $cid .= '"'.$useres['course_id'].'",';
+						
+						 $cid_new = substr($cid, 0, -1); 
+						}
+						
+						echo "select * FROM course where id NOT IN (".$cid_new.")";
+						$selectcourses=mysql_query("select * FROM course where id NOT IN (".$cid_new.")");
+						}
+						else{
+						$selectcourses=mysql_query("select * FROM course");
+						}
+						while($notselectcourses =mysql_fetch_array($selectcourses))
+						{ ?>
+						<option value="<?php  echo $notselectcourses['id']; ?>"><?php  echo $notselectcourses['cname']; ?></option>
+						<?php } ?>
+                        </select>
+                        
+                       	
+			
+			
+		</div>
+		<div>
+			<div class="textfieldname">Choose:</div>
+            <div id="returnresult"></div>                            
+		</div>
+		
+		<?php
+		$Days = 'day';
+		$Months = 'month';
+		$Year	= 'year';
+		//print_r($_POST);
+		if(isset($_POST['countinue']) and $_POST['countinue']!='')
+		{
+		
+			if(!empty($_POST['course_id']) && !empty($_POST['course_type'])) {
+			//print_r($_POST);exit;
+					$result = mysql_query("SELECT * FROM course WHERE id='".$_POST['course_id']."' order by tbl_order");
+					$course = mysql_fetch_array($result);
+					$currentdate=date('Y-m-d H:i:s');
+					$course_endtime = '+'.$course['ctime'].' '.$$course['course_time_type'];
+					$newDate = strtotime($course_endtime);
+					$enddate = date('Y-m-d H:i:s', $newDate);
+					
+					if($_POST['course_type']=='full') {	
+						mysql_query("insert into user_courses set user_id='".$_GET['uid']."', course_id='".$_POST['course_id']."', end_date='".$enddate."', payment_method ='By Admin',paid_amount='".$course['cprice']."',pending_amount='0',signup_type='1', status='Active'");
+					} else if($_POST['course_type']=='set') {						
+						$pending_amount = $course['cprice'] - $_POST['setpicked'];
+						$qry = mysql_query("insert into user_courses set user_id='".$_GET['uid']."', course_id='".$_POST['course_id']."', end_date='".$enddate."', payment_method ='By Admin',paid_amount='".$_POST['setpicked']."',pending_amount='".$pending_amount."',signup_type='0', status='Active'");
+						
+						$setresult = mysql_query("SELECT * FROM course_sets WHERE course_id='".$_POST['course_id']."'");
+						$i=1; 
+						
+						while($courseset1 = mysql_fetch_array($setresult)) {
+							if($i==1) { 
+						mysql_query("insert into user_courses_sets set user_id='".$_GET['uid']."', course_id='".$_POST['course_id']."', set_id='".$courseset1['id']."', start_date='".$currentdate."', end_date='".$enddate."', payment_method ='By Admin',paid_amount='".$_POST['setpicked']."',amount='".$_POST['setpicked']."'");
+						}
+						else
+						{
+						mysql_query("insert into user_courses_sets set user_id='".$_GET['uid']."', course_id='".$_POST['course_id']."', set_id='".$courseset1['id']."',amount='".$courseset1['set_price']."'");
+						}
+						$i++;
+						}
+					}
+				} 
+				?>
+				<script>
+				window.location="https://householdstafftraining.com/school-old/wp-admin/admin.php?page=addstudents&action=showcourses&userid=<?php echo $_GET['uid']; ?>";
+				</script>
+				<?php
+		}
+		?>

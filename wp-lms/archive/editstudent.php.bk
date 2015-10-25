@@ -1,0 +1,392 @@
+<?php
+
+require('LMS_SchoolDB.php');
+require('StudentAccountForm.php');
+
+
+/**
+ * Get Post Data from form submission.
+ *
+ * @return array
+ */
+function getFormSubmissionData(){
+	$newoptions = Array();
+	$newoptions[SAF_FN] = strip_tags(stripslashes($_POST[SAF_FN]));
+	$newoptions[SAF_LN] = strip_tags(stripslashes($_POST[SAF_LN]));
+	$newoptions[SAF_PASSWORD] = strip_tags(stripslashes($_POST[SAF_PASSWORD]));
+	$newoptions[SAF_LOGIN] = strip_tags(stripslashes($_POST[SAF_LOGIN]));
+	$newoptions[SAF_EMAIL] = strip_tags(stripslashes($_POST[SAF_EMAIL]));
+	$newoptions[SAF_SADDRESS] = strip_tags(stripslashes($_POST[SAF_SADDRESS]));
+	$newoptions[SAF_SCITY] = strip_tags(stripslashes($_POST[SAF_SCITY]));
+	$newoptions[SAF_SSTATE] = strip_tags(stripslashes($_POST[SAF_SSTATE]));
+	$newoptions[SAF_SCOUNTRY] = strip_tags(stripslashes($_POST[SAF_SCOUNTRY]));
+	$newoptions[SAF_SPHONE] = trim(addslashes($_POST[SAF_SPHONE]));
+	$newoptions[SAF_SZIP] = trim(addslashes($_POST[SAF_SZIP]));
+	$newoptions[SAF_BADDRESS] 		= $_POST[SAF_BADDRESS];
+	$newoptions[SAF_BCITY] 		= $_POST[SAF_BCITY];
+	$newoptions[SAF_BSTATE] = $_POST[SAF_BSTATE];
+	$newoptions[SAF_BCOUNTRY] = $_POST[SAF_BCOUNTRY];
+	$newoptions[SAF_BPHONE] = $_POST[SAF_BPHONE];
+	$newoptions[SAF_BZIP] = $_POST[SAF_BZIP];
+
+	return $newoptions;
+}
+
+/**
+ *
+ * Checks to see if is a Form Submission
+ * @return bool
+ */
+function isFormSubmission(){
+	$submitted = false;
+	if(!empty($_POST["custom_submit"]))
+		$submitted = true;
+	return $submitted;
+}
+
+/**
+ *
+ * Process Form by performing database calls and sending out email accordingly
+ *
+ * @param $lmsdb 		LMS_DB Object
+ * @param $formData     StudentAccountForm object
+ * @return bool         False if DB calls fails
+ */
+function processForm($lmsdb,$formData){
+	$formprocessed = false;
+	if($_GET['action']=='edit'){
+		$result = $lmsdb->update_student_account($formData->getField(SAF_UID), $formData->getAllFields());
+		if($result > 0) $formprocessed = true;
+	}else{
+		$result = $lmsdb->register_student_account($formData->getAllFields());
+		if($result>0) {
+			//send email
+			$formprocessed = true;
+		}
+	}
+	return $formprocessed;
+}
+
+
+/**
+ * Globals Variables
+ */
+$lmsdb = new LMS_SchoolDB(); // Initialize DB Handler
+$form = new StudentAccountForm();  // Initialize Student Account Form
+$countryList = $lmsdb->get_country_list(); //Get Country List for drop down menu
+$errors = Array();
+
+//Form Submission, get no values and insert/update database according to action
+if (isFormSubmission()) {
+	$form->setField(SAF_ACTION,$_POST[SAF_ACTION]);
+	echo "<pre>". $form->getField(SAF_ACTION) . "</pre>";
+	echo "<pre>". var_dump($_POST) . "</pre>";
+
+	$form->load(getFormSubmissionData());
+	$errors = $form->verifyRequiredFields();
+	echo "<pre>Errors=". $errors . "</pre>";
+
+	//$formprocessed = processForm($lmsdb,$form);
+	$formprocessed = false;
+	if(!$formprocessed){
+
+	}
+
+
+	//redirect to redirectURL
+
+	exit();
+}else{
+	echo "<pre>Found POST DATA:".var_dump($_GET)."</pre>";
+	$form->setField(SAF_ACTION,$_GET[SAF_ACTION]);
+
+	// if action is equal to edit, display student information.
+	// all other cases display empty student information to be added.
+	if($_GET['action']=='edit' && !empty($_GET['userId'])) {
+		$studentdata = $lmsdb->get_student_account($_GET['userId']);
+		$form->setField(SAF_UID, $_GET['userId']);
+		$form->load($studentdata);
+		echo "<pre>Found student_data:" . var_dump($studentdata) . "</pre>";
+	}
+}
+
+require('conf.php');
+/*
+	if(isset($_GET['userId']) && !empty($_GET['userId'])) {
+
+		$userId 		= $_GET['userId'];
+		$user_qry 	= mysql_query("SELECT * FROM `tbl_users` WHERE `id`=$userId");
+		$user_result	= mysql_fetch_array($user_qry);
+
+		// loadFromDB($userResult)
+		
+		$user_name 			= $user_result['first_name'];
+		$user_lname 		= $user_result['last_name']; 
+		$user_login			= $user_result['user_login']; 
+		$user_pass 			= $user_result['user_pass'];
+		$user_email 		= $user_result['user_email'];
+		$saddress			= $user_result['address'];
+		$scity 				= $user_result['city'];
+		$sstate 			= $user_result['state'];
+		$scountry 			= $user_result['country'];
+		$szipcode			= $user_result['zipcode'];
+		$sphone				= $user_result['phone'];
+		$baddress			= $user_result['bill_address'];
+		$bcity 				= $user_result['bill_city'];
+		$bstate 			= $user_result['bill_state'];
+		$bcountry 			= $user_result['bill_country'];
+		$bphone				= $user_result['bill_phone'];
+		$bzipcode			= $user_result['bill_zipcode'];
+	} 
+*/
+
+/*
+	global $wpdb;
+	$tablename =  'tbl_users';
+	if (!empty($_POST["custom_submit"]) ) {
+
+		// loadFromForm($newOptions)
+		$newoptions['user_name'] = strip_tags(stripslashes($_POST["user_name"]));
+		$newoptions['user_lname'] = strip_tags(stripslashes($_POST["user_lname"]));
+		$newoptions['user_pass'] = strip_tags(stripslashes($_POST["user_pass"]));
+		$newoptions['user_login'] = strip_tags(stripslashes($_POST["user_login"]));
+		$newoptions['user_email'] = strip_tags(stripslashes($_POST["user_email"]));
+		$newoptions['saddress'] = strip_tags(stripslashes($_POST["saddress"]));
+		$newoptions['scity'] = strip_tags(stripslashes($_POST["scity"]));
+		$newoptions['sstate'] = strip_tags(stripslashes($_POST["sstate"]));
+		$newoptions['scountry'] = strip_tags(stripslashes($_POST["scountry"]));
+		$newoptions['sphone'] = trim(addslashes($_POST["sphone"]));
+		$newoptions['szipcode'] = trim(addslashes($_POST["szipcode"]));
+		$newoptions['baddress'] 		= $_POST["baddress"];
+		$newoptions['bcity'] 		= $_POST["bcity"];
+		$newoptions['bstate'] = $_POST["bstate"];
+		$newoptions['bcountry'] = $_POST["bcountry"];
+		$newoptions['bphone'] = $_POST["bphone"];
+		$newoptions['bzipcode'] = $_POST["bzipcode"];
+
+		if($userId == '') {
+			//$term = wp_insert_term($_POST["user_name"], 'user', $args = array() );
+			/* print_r($term);
+			echo $term->term_id;
+			exit; */
+			$wpdb->insert($tablename, array(
+											'first_name' 	=> $newoptions['user_name'],
+											'last_name' 	=> $newoptions['user_lname'], 
+											'user_pass' 	=> $newoptions['user_pass'],
+											'user_login' 	=> $newoptions['user_login'],
+											'user_email' 	=> $newoptions['user_email'],
+											'address'		=> $newoptions['saddress'],
+											'city'			=> $newoptions['scity'],
+											'state' 		=> $newoptions['sstate'],
+											'country' 		=> $newoptions['scountry'],
+											'phone'			=> $newoptions['sphone'],
+											'zipcode'		=> $newoptions['szipcode'],
+											'bill_address'	=> $newoptions['baddress'],
+											'bill_city' 	=> $newoptions['bcity'],
+											'bill_state' 	=> $newoptions['bstate'],
+											'bill_country'	=> $newoptions['bcountry'],
+											'bill_phone'	=> $newoptions['bphone'],
+											'bill_zipcode'	=> $newoptions['bzipcode']
+										)
+						);
+			$lastid = $wpdb->insert_id;
+			$msg = '&msg=add';
+			
+			$result = mysql_query("SELECT * FROM tbl_users where id=".$lastid);
+
+			$row = mysql_fetch_array($result);
+			
+			$to = $row['user_email'];
+			$subject = "Welcome to House Hold Staff Training Institute";
+
+			$message = "
+			<html>
+			<head>
+			<title>Welcome to House Hold Staff Training Institute</title>
+			</head>
+			<body>
+			<table>
+			<tr><td>Hello</td><td>".$row['first_name'].' '.$row['last_name'].", </td></tr>
+			</table>
+			<p<br>> Welcome to House Hold Staff Training Institute.</p>
+
+			<br>
+			<br>
+			Thanks,<br/>
+			House Hold Staff.
+			</body>
+			</html>
+			";
+
+			// Always set content-type when sending HTML email
+			$headers = "MIME-Version: 1.0" . "\r\n";
+			$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+
+			// More headers
+			$headers .= 'From: <info@hstinstitute.com>' . "\r\n";
+			
+
+			mail($to,$subject,$message,$headers);
+
+			
+		} else {
+		
+			mysql_query("UPDATE `tbl_users` SET 
+				`first_name` = '".$newoptions['user_name']."',
+				`last_name` = '".$newoptions['user_lname']."',
+				`user_pass` = '".$newoptions['user_pass']."',
+				`address` = '".$newoptions['saddress']."',
+				`city` = '".$newoptions['scity']."',
+				`state` = '".$newoptions['sstate']."', 
+				`country`= '".$newoptions['scountry']."',
+				`phone`='".$newoptions['sphone']."',
+				`zipcode`='".$newoptions['szipcode']."',
+				`bill_address` 			='".$newoptions['baddress']."',
+				`bill_city` 	='".$newoptions['bcity']."',
+				`bill_state`			='".$newoptions['bstate']."',
+				`bill_country`			='".$newoptions['bcountry']."',
+				`bill_phone`			='".$newoptions['bphone']."',
+				`bill_zipcode`			='".$newoptions['bzipcode']."'
+				WHERE `id`=".$userId);
+			
+			$msg = '&msg=edit';
+		}
+	
+		$location = $_POST['redirect'];
+		$location.= $msg;
+?>
+	<script type="text/javascript">
+		window.location = '<?php echo $location; ?>';
+	</script>
+<?php	
+}
+
+
+
+?>
+<form method="post"><div id="settings">
+<div class="wrap">
+	<h2><?php if($form->getField(SAF_ACTION)=='add') { echo 'Add Student'; } else { echo 'Edit Student'; } ?> </h2></div>
+		<?php if ($form->totalErrors() > 0): ?>
+		<div class="updated below-h2" id="message" style="padding:5px; margin:5px 0px">
+			<ul>
+				<?php if($form->getFormErrorMessage(SAF_FN)!=""): ?><li><label for="select1"><?php echo $form->getFormErrorMessage(SAF_FN); ?></label></li><?php endif; ?>
+				<li><label for="text1">Text 1 is invalid.</label></li>
+				<li><label for="textarea1">TextArea 1 is invalid.</label></li>
+				<li><label for="radio1">Radio 1 is invalid.</label></li>
+				<li><label for="checkbox1">Checkbox 1 is invalid.</label></li>
+			</ul>
+		</div>
+		<?php endif; ?>
+
+		<div class="form-field">
+			<label for="user_name">First Name:</label>
+			<input type="text" name="<?php echo SAF_FN; ?>" value="<?php echo $form->getField(SAF_FN); ?>" />
+		</div>
+		<div class="form-field">
+			<label for="user_lname">Last Name:</label>
+			<input type="text" name="<?php echo SAF_LN; ?>" value="<?php echo $form->getField(SAF_LN); ?>" />
+		</div>
+		
+		<div class="form-field">
+			<label for="user_email">Username:</label>
+			<?php 
+			if(empty($form->getField(SAF_LOGIN))) { ?> <input type="text" name="<?php echo SAF_LOGIN; ?>" value="<?php echo $form->getField(SAF_LOGIN); ?>" /> <?php } else { echo $form->getField(SAF_LOGIN); }
+			 ?>
+		</div>
+		
+		<div class="form-field">
+			<label for="user_email">Email:</label>
+			<?php 
+			if(empty($form->getField(SAF_EMAIL))) { ?> <input type="text" name="<?php echo SAF_EMAIL; ?>" value="<?php echo $form->getField(SAF_EMAIL); ?>" /> <?php } else { echo $form->getField(SAF_EMAIL); }
+			 ?>
+			<?php //echo $user_email; ?>
+		</div>
+		
+		<div class="form-field">
+			<label for="user_pass">Password:</label>
+			<input type="text"  name="<?php echo SAF_PASSWORD; ?>" value="<?php echo $form->getField(SAF_PASSWORD);; ?>" />
+		</div>
+		<div class="mainpanel">
+		<div class="shippingpanel">
+		
+		<h3>Shipping Address</h3>
+			<div>
+			<div class="textfieldname">Shipping Address:</div>
+			<input type="text" name="<?php echo SAF_SADDRESS; ?>" value="<?php echo $form->getField(SAF_SADDRESS); ?>" class="textfield"/>
+		</div>
+		<div>
+			<div class="textfieldname">Shipping City:</div>
+			<input type="text" name="<?php echo SAF_SCITY; ?>" value="<?php echo $form->getFIeld(SAF_SCITY); ?>" class="textfield"/>
+		</div>
+		<div>
+			<div class="textfieldname">Shipping State:</div>
+			<input type="text" name="<?php echo SAF_SSTATE; ?>" value="<?php echo $form->getField(SAF_SSTATE); ?>" class="textfield"/>
+		</div>
+		<div>
+						<div class="textfieldname">Shipping Country:</div>
+                        <select name="<?php echo SAF_SCOUNTRY;?>" class="textfield" style="width:150px;">
+                        	<option value="">Select Country</option>
+                            <?php 
+							foreach($countryList as $array) {?>
+								<option value="<?php  echo $array->name; ?>" <?php if($form->getField(SAF_SCOUNTRY)==$array->name){ ?> selected="selected"<?php } ?>><?php  echo $array->name; ?></option>
+							<?php }?>
+                        </select>
+		</div>
+		<div>
+			<div class="textfieldname">Shipping Phone:</div>
+			<input type="text" name="<?php echo SAF_SPHONE; ?>" value="<?php echo $form->getField(SAF_SPHONE); ?>" class="textfield"/>
+		</div>
+		<div>
+			<div class="textfieldname">Shipping Zipcode:</div>
+			<input type="text" name="<?php echo SAF_SZIP; ?>" value="<?php echo $form->getField(SAF_SZIP); ?>" class="textfield"/>
+		</div>
+		
+		</div>
+		<div class="billingpanel">
+		<h3>Billing Address</h3>
+		<div>
+			<div class="textfieldname">Billing Address:</div>
+			<input type="text" name="<?php echo SAF_BADDRESS;?>" value="<?php echo $form->getField(SAF_BADDRESS); ?>" class="textfield"/>
+		</div>
+		<div>
+			<div class="textfieldname">Billing City:</div>
+			<input type="text" name="<?php echo SAF_BCITY;?>" value="<?php echo $form->getField(SAF_BCITY); ?>" class="textfield"/>
+		</div>
+		<div>
+			<div class="textfieldname">Billing State:</div>
+			<input type="text" name="<?php echo SAF_BSTATE;?>" value="<?php echo $form->getField(SAF_BSTATE); ?>" class="textfield"/>
+		</div>
+		<div>
+						<div class="textfieldname">Billing Country:</div>
+                        <select name="<?php echo SAF_BCOUNTRY; ?>" class="textfield" style="width:150px;">
+                        	<option value="">Select Country</option>
+                            <?php 
+							foreach($countryList as $array) {?>
+								<option value="<?php  echo $array->name; ?>" <?php if($form->getField(SAF_BCOUNTRY)==$array->name){ ?> selected="selected"<?php } ?>><?php  echo $array->name; ?></option>
+							<?php }?>
+                        </select>
+			
+		</div>
+		<div>
+			<div class="textfieldname">Billing Phone:</div>
+			<input type="text" name="<?php echo SAF_BPHONE; ?>" value="<?php echo $form->getField(SAF_BPHONE); ?>" class="textfield"/>
+		</div>
+		<div>
+			<div class="textfieldname">Billing Zipcode:</div>
+			<input type="text" name="<?php echo SAF_BZIP; ?>" value="<?php echo $form->getField(SAF_BZIP); ?>" class="textfield"/>
+		</div>
+		
+		</div>
+		</div>
+	
+		<input type="hidden" name="custom_submit" value="true" />
+		<input type="hidden" name="redirect" value="<?php echo $_GET['redirect']; ?>" />
+		<input type="hidden" name="action" value="<?php echo $_GET['action']; ?>" />
+		<div class="form-field">
+		<label for="user_image">&nbsp;</label>
+		<p class="submit">
+			<input id="submitForm" type="submit" value="<?php if($form->getField(SAF_ACTION)=='add') { echo 'Add user'; } else { echo 'Update user'; } ?>"/>
+		</p>
+	</div>
+</form>
